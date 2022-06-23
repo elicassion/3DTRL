@@ -5,6 +5,8 @@ We present 3DTRL, a plug-and play layer in Transformer using 3D camera transform
 Check our [pre-print paper]() and [project page](https://www3.cs.stonybrook.edu/~jishang/3dtrl/3dtrl.html) for more details.
 
 By 3DTRL, we can align videos from multiple viewpoints, even including ego-centric view and third-person view videos.
+| Third-person view	| First-person view GT |     Ours    |   DeiT+TCN  |
+| ----------------- | -------------------- | ----------- | ----------- |
 ![Multi-view Video Alignment Results](3dtrl_can_mh.gif)
 
 3DTRL recovers pseudo-depth of images -- getting semantically meaningful results.
