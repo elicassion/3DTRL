@@ -9,3 +9,6 @@ By 3DTRL, we can align videos from multiple viewpoints, even including ego-centr
 
 3DTRL recovers pseudo-depth of images -- getting semantically meaningful results.
 ![Pseudo-depth](pseudo_depth_demo2.gif)
+
+Overview of 3DTRL
+![3DTRL](overview.png)
