@@ -11,4 +11,4 @@ By 3DTRL, we can align videos from multiple viewpoints, even including ego-centr
 ![Pseudo-depth](pseudo_depth_demo2.gif)
 
 Overview of 3DTRL
-![3DTRL](overview.png)
+![3DTRL](overview_white.png)
