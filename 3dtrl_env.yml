@@ -1,0 +1,22 @@
+name: 3dtrl
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - pytorch=1.12.1
+  - torchvision
+  - torchaudio
+  - cudatoolkit=11.3
+  - pip
+  - jupyterlab
+  - ipympl
+  - ipywidgets
+  - matplotlib
+  - einops
+  - pyqt
+  - pip:
+    - timm
+    - opencv-python
+    - tensorboard
+    - tqdm

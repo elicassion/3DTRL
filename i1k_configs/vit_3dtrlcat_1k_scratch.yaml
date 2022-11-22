@@ -1,0 +1,123 @@
+# Dataset / Model parameters
+cat: True
+npl_depth: 4
+data_dir: /data/imagenet
+dataset: ImageFolder
+train_split: train
+val_split: val
+model: vit_3dtrl_tiny_patch16_224
+pretrained: false 
+initial_checkpoint: ''
+resume: '' 
+no_resume_opt: false
+num_classes: 1000
+gp: null
+img_size: 224
+input_size: null
+crop_pct: 0.9
+mean:
+- 0.485
+- 0.456
+- 0.406 
+std:
+- 0.229
+- 0.224
+- 0.225 
+interpolation: ''
+batch_size: 512 
+validation_batch_size_multiplier: 1 
+
+# Optimizer parameters
+opt: adamw
+opt_eps: 1.0e-06
+opt_betas: null
+momentum: 0.9
+weight_decay: 0.3 
+clip_grad: 1.0
+clip_mode: norm
+
+# Learning rate schedule parameters
+sched: cosine
+lr: 1.5e-3 
+lr_noise: null
+lr_noise_pct: 0.67
+lr_noise_std: 1.0
+lr_cycle_mul: 1.0
+lr_cycle_limit: 1
+warmup_lr: 1.0e-6
+min_lr: 1.0e-5 
+epochs: 300
+epoch_repeats: 0.0
+start_epoch: null
+decay_epochs: 1.0
+warmup_epochs: 15 
+cooldown_epochs: 10
+patience_epochs: 10
+decay_rate: 0.988
+
+# Augmentation & regularization parameters
+no_aug: false
+scale:
+- 0.08
+- 1.0
+ratio:
+- 0.67
+- 1.5
+hflip: 0.5
+vflip: 0.0
+color_jitter: 0.4
+aa: rand-m15-n2-mstd1.0-inc1 
+aug_splits: 0
+jsd: false
+reprob: 0.0
+remode: pixel
+recount: 3
+resplit: false
+mixup: 0.5 
+cutmix: 1.0
+cutmix_minmax: null
+mixup_prob: 1.0
+mixup_switch_prob: 0.5
+mixup_mode: batch
+mixup_off_epoch: 0
+smoothing: 0.1
+train_interpolation: random
+drop: 0. 
+drop_connect: null
+drop_path: 0. 
+drop_block: null
+
+# Batch norm parameters (only works with gen_efficientnet based models currently)
+bn_tf: false
+bn_momentum: null
+bn_eps: null
+sync_bn: true 
+dist_bn: '' 
+split_bn: false
+
+# Model Exponential Moving Average
+model_ema: true
+model_ema_force_cpu: false
+model_ema_decay: 0.99992
+
+# Misc
+seed: 42
+log_interval: 50
+recovery_interval: 0
+checkpoint_hist: 10
+workers: 8
+save_images: false
+amp: false
+apex_amp: false
+native_amp: true 
+channels_last: false
+pin_mem: true
+no_prefetcher: false
+output: 'runs'
+experiment: ''
+eval_metric: top1
+tta: 0
+local_rank: 0
+use_multi_epochs_loader: true
+torchscript: false
+log_wandb: false
