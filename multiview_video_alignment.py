@@ -29,8 +29,6 @@ parser.add_argument('--batch_size', type=int, default=1)
 parser.add_argument('--model', type=str, default="vitnpl_tiny_patch16_224")
 parser.add_argument('--pred_depth', type=int, default=1)
 parser.add_argument('--pred_campos_from', type=str, default="both-sep")
-parser.add_argument('--n_layer', type=int, default=4)
-parser.add_argument('--n_3denc_layer', type=int, default=4)
 # parser.add_argument('--embed_dim', type=int, default=768)
 parser.add_argument('--pretrained', action='store_true')
 
