@@ -60,7 +60,7 @@ Credit: We build our code for image classification on top of [timm](https://gith
 
 ### Video Alignment
 #### FTPV Dataset
-We release the First-Third Person View (FTPV) dataset (including Pouring, MC, Panda, Lift, and Can used in our paper) at [Google Drive](https://drive.google.com/file/d/14chFXCi74rmd086-QPoAbOcRA-sGcwXn/view?usp=share_link). Download and unzip it.
+We release the First-Third Person View (FTPV) dataset (including MC, Panda, Lift, and Can used in our paper) at [Google Drive](https://drive.google.com/file/d/14chFXCi74rmd086-QPoAbOcRA-sGcwXn/view?usp=share_link). Download and unzip it. Please consider [cite](#cite-3dtrl) our paper if you use the datasets. Note: I also include Pouring dataset introduced by [TCN paper](https://arxiv.org/pdf/1704.06888.pdf) in the drive. The reason is that I got a hard time to find a valid source to download it when doing my research. I'm re-sharing it for your convenience. Please cite them if you use Pouring.
 
 Environment:
 ```
@@ -83,6 +83,7 @@ bash script.sh your_config_file data_location log_location
 
 
 ## Cite 3DTRL
+If you find our research useful, please consider cite:
 ```
 @inproceedings{
     3dtrl,
