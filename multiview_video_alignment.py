@@ -21,12 +21,15 @@ parser.add_argument('--seed', type=int, default=42)
 
 # data params
 parser.add_argument('--data', type=str, default="panda")
+# for unseen, set train_views to (6 for pick), (5 for mc), and (3 for can & lift)
+# -1 or 0 means all trained on all views (seen)
 parser.add_argument('--train_views', type=int, default=-1)
+# -1 means split data to train/val/test by default
 parser.add_argument('--train_videos', type=int, default=-1)
 parser.add_argument('--batch_size', type=int, default=1)
 
 # model structure params
-parser.add_argument('--model', type=str, default="vitnpl_tiny_patch16_224")
+parser.add_argument('--model', type=str, default="vit_3dtrl_tiny_patch16_224")
 parser.add_argument('--pred_depth', type=int, default=1)
 parser.add_argument('--pred_campos_from', type=str, default="both-sep")
 # parser.add_argument('--embed_dim', type=int, default=768)

@@ -6,12 +6,12 @@ class ViT(nn.Module):
     def __init__(self, config):
         super(ViT, self).__init__()
         self.config = config
-        base_name = "vit_b16"
+        base_name = "vit_t16"
 
         self.name = f"{base_name}_l{config.n_layer+config.n_3denc_layer}-0-0-{config.dataset_name}"
         if config.note != "":
             self.name += f"-{config.note}"
-        self.feature_extractor = timm.create_model('vit_base_patch16_224', pretrained=config.pretrained, num_classes=config.D)
+        self.feature_extractor = timm.create_model('vit_tiny_patch16_224', pretrained=config.pretrained, num_classes=config.D)
 
 
     def forward(self, x):
